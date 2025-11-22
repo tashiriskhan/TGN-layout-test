@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Ground Narrative </title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; }
+
+        /* Centered container like BBC */
+        .container { width: 90%; max-width: 1200px; margin: auto; }
+
+        header { background: #111; color: #fff; padding: 15px 0; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        nav a { color: #fff; margin-right: 20px; text-decoration: none; font-size: 15px; font-weight: 500; }
+
+        /* style compact hero */
+        .hero { background: #222; color: #fff; padding: 20px; font-size: 28px; font-weight: bold; border-radius: 4px; }
+
+        .section { margin-top: 30px; }
+        h2 { margin-bottom: 15px; }
+
+        /* BBC-style grids */
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+
+        .card { background: #fff; padding: 12px; border-radius: 4px; min-height: 110px; border: 1px solid #ddd; }
+
+        footer { background: #111; color: #fff; padding: 25px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div style="font-size: 22px; font-weight: bold;">THE GROUND NARRATIVE</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Kashmir</a>
+                <a href="#">India</a>
+                <a href="#">World</a>
+                <a href="#">Opinion</a>
+                <a href="#">Magazine</a>
+                <a href="#">Videos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+       
+
+        <div class="section">
+            <h2>Top Highlights</h2>
+            <div class="grid-4">
+                <div class="card">Highlight Story 1</div>
+                <div class="card">Highlight Story 2</div>
+                <div class="card">Highlight Story 3</div>
+                <div class="card">Highlight Story 4</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Kashmir Spotlight</h2>
+            <div class="grid-3">
+                <div class="card">Kashmir Story 1</div>
+                <div class="card">Kashmir Story 2</div>
+                <div class="card">Kashmir Story 3</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>World News</h2>
+            <div class="grid-3">
+                <div class="card">World News 1</div>
+                <div class="card">World News 2</div>
+                <div class="card">World News 3</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Videos</h2>
+            <div class="grid-3">
+                <div class="card">Video Block 1</div>
+                <div class="card">Video Block 2</div>
+                <div class="card">Video Block 3</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Magazine</h2>
+            <div class="card">Download latest PDF issue</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 The Ground Narrative. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,102 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Ground Narrative </title>
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>The Ground Narrative — Home</title>
 
-        /* Centered container like BBC */
-        .container { width: 90%; max-width: 1200px; margin: auto; }
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
 
-        header { background: #111; color: #fff; padding: 15px 0; }
-        header .container { display: flex; justify-content: space-between; align-items: center; }
-        nav a { color: #fff; margin-right: 20px; text-decoration: none; font-size: 15px; font-weight: 500; }
-
-        /* style compact hero */
-        .hero { background: #222; color: #fff; padding: 20px; font-size: 28px; font-weight: bold; border-radius: 4px; }
-
-        .section { margin-top: 30px; }
-        h2 { margin-bottom: 15px; }
-
-        /* BBC-style grids */
-        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
-        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
-
-        .card { background: #fff; padding: 12px; border-radius: 4px; min-height: 110px; border: 1px solid #ddd; }
-
-        footer { background: #111; color: #fff; padding: 25px; margin-top: 40px; }
-    </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <header>
-        <div class="container">
-            <div style="font-size: 22px; font-weight: bold;">THE GROUND NARRATIVE</div>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Kashmir</a>
-                <a href="#">India</a>
-                <a href="#">World</a>
-                <a href="#">Opinion</a>
-                <a href="#">Magazine</a>
-                <a href="#">Videos</a>
-            </nav>
-        </div>
-    </header>
-
-    <div class="container">
-       
-
-        <div class="section">
-            <h2>Top Highlights</h2>
-            <div class="grid-4">
-                <div class="card">Highlight Story 1</div>
-                <div class="card">Highlight Story 2</div>
-                <div class="card">Highlight Story 3</div>
-                <div class="card">Highlight Story 4</div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Kashmir Spotlight</h2>
-            <div class="grid-3">
-                <div class="card">Kashmir Story 1</div>
-                <div class="card">Kashmir Story 2</div>
-                <div class="card">Kashmir Story 3</div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>World News</h2>
-            <div class="grid-3">
-                <div class="card">World News 1</div>
-                <div class="card">World News 2</div>
-                <div class="card">World News 3</div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Videos</h2>
-            <div class="grid-3">
-                <div class="card">Video Block 1</div>
-                <div class="card">Video Block 2</div>
-                <div class="card">Video Block 3</div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Magazine</h2>
-            <div class="card">Download latest PDF issue</div>
-        </div>
+  <!-- Top mini bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="top-left">New Delhi &nbsp;•&nbsp; 12°C</div>
+      <div class="top-center">
+        <button class="lang active">English</button>
+        <button class="lang">اردو</button>
+        <button class="lang">हिन्दी</button>
+      </div>
+      <div class="top-right">
+        <a href="#" class="icon">🔔</a>
+        <a href="#" class="icon">✉️</a>
+        <a href="#" class="signin">SIGN IN</a>
+      </div>
     </div>
+  </div>
 
-    <footer>
-        <div class="container">
-            <p>© 2025 The Ground Narrative. All rights reserved.</p>
+  <!-- Logo + utilities -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-logo">The Ground Narrative</div>
+        <div class="brand-slogan">Stories That See Beyond Headlines</div>
+      </div>
+
+      <div class="header-actions">
+        <a href="#" class="small-link">Ask</a>
+        <a href="#" class="small-link">RSS</a>
+        <a href="#" class="small-link">Newsletters</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main navigation -->
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <ul class="nav-list">
+        <li class="nav-item active">Home</li>
+        <li class="nav-item">Kashmir</li>
+        <li class="nav-item">India</li>
+        <li class="nav-item">World</li>
+        <li class="nav-item">Politics</li>
+        <li class="nav-item">Culture</li>
+        <li class="nav-item">Environment</li>
+        <li class="nav-item">Opinion</li>
+        <li class="nav-item">Magazine</li>
+        <li class="nav-item">Video</li>
+      </ul>
+      <div class="nav-tools">
+        <input type="search" placeholder="Search" aria-label="Search"/>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero + columns -->
+  <main class="container page-grid">
+
+    <!-- Left: Featured hero -->
+    <section class="col hero-col">
+      <article class="hero-card">
+        <img src="https://picsum.photos/1000/600?random=15" alt="Hero image" />
+        <div class="hero-content">
+          <div class="kicker">FEATURE</div>
+          <h1>Breaking: Climate Summit Reaches Historic Agreement</h1>
+          <p class="meta">2 hours ago • By The Ground Narrative</p>
         </div>
-    </footer>
+      </article>
+
+      <!-- Below hero, a highlighted special -->
+      <div class="special">
+        <div class="special-image"><img src="https://picsum.photos/400/150?random=21" alt=""></div>
+        <div class="special-text">
+          <div class="tag">SPECIAL</div>
+          <h3>People's wellbeing matters most</h3>
+          <p class="muted">China Politics</p>
+        </div>
+      </div>
+
+      <!-- Opinions preview -->
+      <div class="section-block">
+        <h3 class="section-title">Opinions</h3>
+        <div class="opinion-list">
+          <article class="op-item">
+            <img src="https://picsum.photos/80/80?random=31" alt="">
+            <div>
+              <h4>First Voice</h4>
+              <p class="muted">Safeguarding peace and the post WWII global order</p>
+            </div>
+          </article>
+
+          <article class="op-item">
+            <img src="https://picsum.photos/80/80?random=32" alt="">
+            <div>
+              <h4>Guest Column</h4>
+              <p class="muted">Why culture matters in policy making</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Middle: Breaking news list -->
+    <aside class="col mid-col">
+      <div class="breaking">
+        <div class="breaking-header"><span>BREAKING NEWS</span></div>
+        <ul class="breaking-list">
+          <li>
+            <a href="#">Death toll rises to 31 in Sri Lanka rains and landslides</a>
+            <div class="time">22 minutes ago</div>
+          </li>
+          <li>
+            <a href="#">Venezuela bans airlines that halted flights per U.S. warning</a>
+            <div class="time">2 hours ago</div>
+          </li>
+          <li>
+            <a href="#">Flash floods, landslides leave 29 dead in North Sumatra</a>
+            <div class="time">2 hours ago</div>
+          </li>
+          <li>
+            <a href="#">Trump says attack near the White House is biggest threat</a>
+            <div class="time">3 hours ago</div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Trending cards -->
+      <div class="section-block">
+        <h3 class="section-title">Trending</h3>
+        <div class="list-cards">
+          <article class="card">
+            <img src="https://picsum.photos/320/180?random=41" alt="">
+            <h4>How China Works</h4>
+            <p class="muted">6 months ago</p>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/320/180?random=42" alt="">
+            <h4>Inside the energy debate</h4>
+            <p class="muted">1 week ago</p>
+          </article>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right: Secondary stories + most read -->
+    <aside class="col right-col">
+      <div class="side-top">
+        <article class="side-card">
+          <img src="https://picsum.photos/380/180?random=51" alt="">
+          <h4>Premier: China Tonga economic agreement to boost trade</h4>
+          <p class="muted">5 hours ago</p>
+        </article>
+
+        <ul class="news-list-compact">
+          <li><a href="#">John Lee: Firefighters bring HK residential fire under control</a><div class="time">4 hours ago</div></li>
+          <li><a href="#">China urges Japan to speed up disposal of abandoned chemical weapons</a><div class="time">3 hours ago</div></li>
+          <li><a href="#">Russia rules out concessions, Ukraine rejects changes</a><div class="time">47 minutes ago</div></li>
+        </ul>
+      </div>
+
+      <div class="most-read section-block">
+        <div class="most-title">MOST READ</div>
+        <ol class="most-list">
+          <li><span class="num">01</span> China's 'ghost particle' detector confirms physics mystery</li>
+          <li><span class="num">02</span> Kung fu master practices gravity defying moves</li>
+          <li><span class="num">03</span> Study links social media and mental health</li>
+        </ol>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <div>© 2025 The Ground Narrative</div>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
